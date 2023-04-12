@@ -17,12 +17,12 @@ const createLog =  function(result, expected, actual, message) {
 }
 
 const expectationMismatch =  function(expected, actual) {
-  let expectationMismatchMessage = "\n";
-  expectationMismatchMessage += "\tExpected = " + expected;
-  expectationMismatchMessage += "\n";
-  expectationMismatchMessage += "\t  Actual = " + actual;
+  let message = "\n";
+  message += "\tExpected = " + expected;
+  message += "\n";
+  message += "\t  Actual = " + actual;
 
-  return expectationMismatchMessage;
+  return message;
 }
 
 const formatTestMessage =  function(result, expected, actual, message) {
